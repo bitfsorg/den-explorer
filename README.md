@@ -7,10 +7,10 @@ Built for development and debugging on regtest and testnet.
 
 ```bash
 # Start regtest node (requires Docker)
-cd ../bitfs/e2e && docker compose up -d
+cd bitfs/e2e && docker compose up -d && cd ../..
 
 # Build and run
-cd ../../den && go build . && ./den
+cd den-explorer && go build . && ./den
 
 # Open http://localhost:8080
 ```
